@@ -20,9 +20,13 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 20px;
+  display: flex;
+  gap: 15px;
 }
 
 .icon {
+  flex-shrink: 0;
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -67,3 +71,19 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+.header {
+  font-size: 1.3rem;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.text {
+  margin: 13px 0;
+}
+
+/* instead of creating new divs to group elements, I should think whether it makes sense for another element to go inside another (like this button going into the header)*/
